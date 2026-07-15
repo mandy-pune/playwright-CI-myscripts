@@ -4,7 +4,7 @@ test('Add and verify new user Nandu123', async ({ page }) => {
   await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login', { waitUntil: 'domcontentloaded', timeout: 60000 });
 
   await page.fill('input[name="username"]', 'Admin');
-  await page.fill('input[name="password"]', 'admin123');
+  await page.fill('input[name="password"]', 'admin12345');
   await page.getByRole('button', { name: 'Login' }).click();
 
   await page.getByRole('link', { name: 'Admin' }).click();
